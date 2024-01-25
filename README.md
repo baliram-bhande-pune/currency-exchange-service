@@ -117,7 +117,6 @@
 ### Prerequisites
 
 ---
-- Get API KEY from apilayer.com
 - Maven or Docker
 ---
 
