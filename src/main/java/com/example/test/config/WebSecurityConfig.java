@@ -1,2 +1,4 @@
-package com.example.test.config;public class WebSecurityConfig {
+package com.example.test.config;
+
+public class WebSecurityConfig {
 }
