@@ -7,7 +7,6 @@ import lombok.Setter;
 @Setter
 @Getter
 @AllArgsConstructor
-
 /**
  * This is the CurrencyConversionResponse mode class
  */
