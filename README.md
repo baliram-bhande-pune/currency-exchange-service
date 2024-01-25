@@ -131,7 +131,6 @@ The application can be built and run by the `Docker` engine. The `Dockerfile` ha
 Please follow directions shown below in order to build and run the application with Docker Compose file;
 
 ```sh
-$ cd currencyexchange
 $ docker-compose up -d
 ```
 
