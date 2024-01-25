@@ -17,14 +17,13 @@ import java.util.Set;
 @AllArgsConstructor
 @Table(name = "RateEntity")
 @SuperBuilder
-public class RateEntity extends BaseEntity{
+public class RateEntity extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     private EnumCurrency base;
 
     @ElementCollection
-    @CollectionTable(name = "rate_mapping",
-            joinColumns = {@JoinColumn(name = "rate_id", referencedColumnName = "id")})
+    @CollectionTable(name = "rate_mapping", joinColumns = {@JoinColumn(name = "rate_id", referencedColumnName = "id")})
     @MapKeyColumn(name = "currency")
     @MapKeyEnumerated(EnumType.STRING)
     @Column(name = "rates")

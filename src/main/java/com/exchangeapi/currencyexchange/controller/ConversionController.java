@@ -16,15 +16,13 @@ public class ConversionController {
 
     private final ExchangeService exchangeService;
 
-    //@RateLimiter(name = "basic")
     @GetMapping("/{id}")
     public ResponseEntity<ExchangeDto> getConversion(@PathVariable(name = "id") String id) {
         return ResponseEntity.ok(exchangeService.getConversion(id));
     }
 
-    //@RateLimiter(name = "basic")
     @GetMapping
-    public ResponseEntity<List<ExchangeDto>> getConversionList(@RequestParam(name = "startDate")  LocalDate startDate,
+    public ResponseEntity<List<ExchangeDto>> getConversionList(@RequestParam(name = "startDate") LocalDate startDate,
                                                                @RequestParam(name = "endDate") LocalDate endDate) {
 
         return ResponseEntity.ok(exchangeService.getConversionList(startDate,

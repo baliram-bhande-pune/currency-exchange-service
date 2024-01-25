@@ -1,4 +1,4 @@
-# Spring Boot Currency Change API Example
+# Spring Boot Currency Change API 
 
 <img src="screenshots/spring_boot_currency_diagram.png" alt="Main Information" width="800" height="400">
 
@@ -9,7 +9,6 @@
   <li>Here is the explanation of the currency exchange example  
        <ul>
             <li>Get rates from the <b>database</b> if the rate info is already inserted into <b>database</b></li>
-            <li>Get rates from <b>apilayer.com</b> and insert its value into <b>database</b> and return the <b>rate</b> info</li>
             <li>Get exchange rates by exchange request info covering <b>base currency</b>, <b>target currency</b> and lastly <b>amount</b></li>
             <li>Get conversion by rate id</li>
             <li>Get all conversions between two dates named <b>start date</b> and <b>end date</b> </li>
@@ -108,12 +107,10 @@
 - Restful API
 - Spring Cache
 - Actuator
-- Resilience4j
 - Lombok
 - Maven
 - Junit5
 - Mockito
-- Integration Tests
 - Docker
 - Docker Compose
 
@@ -123,11 +120,6 @@
 - Get API KEY from apilayer.com
 - Maven or Docker
 ---
-
-### Get API KEY from apilayer.com
-1 ) Open and register <b>apilayer.com</b>
-
-2 ) Register <b>Exchange Rates Data API</b> and Get <b>API key</b>
 
 
 ### Create .env and Define API key
@@ -165,19 +157,3 @@ You can reach the actuator through the link shown below
 ```
     http://localhost:8080/actuator
 ```
-
-### Screenshots
-
-<details>
-<summary>Click here to show the screenshots of project</summary>
-    <p> Figure 1 </p>
-    <img src ="screenshots/screenshot_1.PNG">
-    <p> Figure 2 </p>
-    <img src ="screenshots/screenshot_2.PNG">
-    <p> Figure 3 </p>
-    <img src ="screenshots/screenshot_3.PNG">
-    <p> Figure 4 </p>
-    <img src ="screenshots/screenshot_4.PNG">
-    <p> Figure 5 </p>
-    <img src ="screenshots/screenshot_5.PNG">
-</details>

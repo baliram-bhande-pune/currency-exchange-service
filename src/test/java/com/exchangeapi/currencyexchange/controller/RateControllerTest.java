@@ -1,4 +1,4 @@
-/*
+
 package com.exchangeapi.currencyexchange.controller;
 
 import com.exchangeapi.currencyexchange.base.BaseControllerTest;
@@ -6,7 +6,6 @@ import com.exchangeapi.currencyexchange.dto.RateDto;
 import com.exchangeapi.currencyexchange.dto.RateInfoDto;
 import com.exchangeapi.currencyexchange.entity.enums.EnumCurrency;
 import com.exchangeapi.currencyexchange.service.RateService;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -72,4 +71,4 @@ class RateControllerTest extends BaseControllerTest {
         // Verify that the rateService.calculateRate() method was called
         verify(rateService, times(1)).calculateRate(base, targets, date);
     }
-}*/
+}
